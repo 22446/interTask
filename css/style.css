@@ -1,0 +1,135 @@
+.myUlClass li
+{
+    padding: 10px 0px 10px 20px ;
+}
+.myUlClass li a {
+   
+    position: relative;
+}
+.myUlClass li a::after{
+    content: "";
+    width: 0%;
+    border: 0px solid white;
+    left: 8px;
+    bottom: 0;
+    position: absolute;
+    height: 1px;
+    transition: width 1s ,border 1s;
+}
+.myUlClass li a:hover::after{
+    width: 70%;
+    border: 1px solid white;
+}
+.header {
+   
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url("../images/Home.jpg");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+}
+.brogress-barMe [aria-valuenow="80"] .progress-bar{
+    width: 85%;
+} 
+.brogress-barMe [aria-valuenow="90"] .progress-bar{
+    width: 90%;
+} 
+.border-botoomMe h3{
+    position: relative;
+}
+.border-botoomMe h3::after{
+    content: "";
+    width: 20%;
+    border: 1px solid black;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+.pFormMe{
+    position: relative;
+}
+.pFormMe::after{
+    content: "";
+    width: 4%;
+    border: 2px solid black;
+    position: absolute;
+    bottom: -13px;
+    left: 48%;
+}
+.SERVICES i  {
+ box-shadow: 0px 0px 0px 10px #0078FF;
+ transition: 1s background-color,color 1s,box-shadow 1s ;
+
+}
+.Portofolio i  {
+   
+    box-shadow: 0px 0px 0px 3px #0078FF;
+}
+.focusout{
+    overflow: hidden;
+    max-width: 100%;
+    
+}
+.myHover2 .focusout img{   
+     
+    transition: 1s all ;
+   
+}
+.myHover2:hover img{
+    transform: scale(1.5);
+    
+}
+.SERVICES .myHover:hover i{
+color: white;
+background-color: #0078FF;
+box-shadow: 0px 0px 0px 10px #d5d6d8;
+}
+.backBlue{
+    position: sticky;
+    background-image:linear-gradient(rgba(0, 81, 255, 0.4),rgba(0, 0, 0, 0.768)), url("../images/fixed.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.backBlue i{
+    box-shadow: 0px 0px 0px 8px #CDE1F8;
+    color: white;
+}
+img.width-33{
+    width: 33px;
+    height: 33px;
+}
+.changec{
+    color: rgb(33, 33, 33);
+}
+.backBlue2 i{
+    box-shadow: 0px 0px 0px 3px #0078FF;
+    color:#0078FF;
+    transition: 1s all;
+}
+.backBlue2 li :hover {
+    color: white;
+    background-color: #0078FF;
+    box-shadow: 0px 0px 0px 4px #d5d6d8;
+    cursor: pointer;
+}
+.cart-cat p {
+    font-size: 0.7rem;
+}
+p.Animation::after{
+  content: "";
+  animation: move-words 7s  infinite; 
+}
+.clickable{
+  
+    background-color: rgb(7, 6, 6);
+    transition:all 1s;
+    color:white;
+}
+.clickable:hover{
+    background-color: rgb(241, 220, 220);
+    color :black;
+}
